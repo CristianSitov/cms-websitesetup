@@ -1,0 +1,58 @@
+[
+    {
+        "name": "owl/address",
+        "version": "dev-master",
+        "version_normalized": "9999999-dev",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/timmarnerweb/address.git",
+            "reference": "54ec22c7996ce536a340991496ad0782fd6b39f6"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/timmarnerweb/address/zipball/54ec22c7996ce536a340991496ad0782fd6b39f6",
+            "reference": "54ec22c7996ce536a340991496ad0782fd6b39f6",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4.0"
+        },
+        "time": "2015-10-03 16:00:24",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "1.0-dev"
+            }
+        },
+        "installation-source": "source",
+        "autoload": {
+            "psr-4": {
+                "Owl\\FormWidgets\\Address\\": ""
+            }
+        },
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Alexey Bobkov",
+                "email": "aleksey.bobkov@gmail.com"
+            },
+            {
+                "name": "Samuel Georges",
+                "email": "daftspunky@gmail.com"
+            }
+        ],
+        "description": "Address widget for OctoberCMS.",
+        "homepage": "http://github.com/october-widgets",
+        "keywords": [
+            "address",
+            "october",
+            "october cms",
+            "owl"
+        ],
+        "support": {
+            "source": "https://github.com/timmarnerweb/address/tree/master"
+        }
+    }
+]

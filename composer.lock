@@ -1,0 +1,74 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
+    ],
+    "hash": "b46143d59156a4de9f107b67f0ba0f26",
+    "packages": [
+        {
+            "name": "owl/address",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/timmarnerweb/address.git",
+                "reference": "54ec22c7996ce536a340991496ad0782fd6b39f6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/timmarnerweb/address/zipball/54ec22c7996ce536a340991496ad0782fd6b39f6",
+                "reference": "54ec22c7996ce536a340991496ad0782fd6b39f6",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.4.0"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.0-dev"
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Owl\\FormWidgets\\Address\\": ""
+                }
+            },
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Alexey Bobkov",
+                    "email": "aleksey.bobkov@gmail.com"
+                },
+                {
+                    "name": "Samuel Georges",
+                    "email": "daftspunky@gmail.com"
+                }
+            ],
+            "description": "Address widget for OctoberCMS.",
+            "homepage": "http://github.com/october-widgets",
+            "keywords": [
+                "address",
+                "october",
+                "october cms",
+                "owl"
+            ],
+            "support": {
+                "source": "https://github.com/timmarnerweb/address/tree/master"
+            },
+            "time": "2015-10-03 16:00:24"
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": {
+        "owl/address": 20
+    },
+    "prefer-stable": false,
+    "prefer-lowest": false,
+    "platform": [],
+    "platform-dev": []
+}

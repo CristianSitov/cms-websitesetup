@@ -1,0 +1,445 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+tabs:
+    fields:
+
+        # First Tab - Meta Information
+        website_section:
+            type: section
+            label: Metadata Information
+            comment: Here you can setup basic meta tags and icons
+            tab: Metadata Information
+        website_title:
+            label: timmarner.websitesetup::lang.keys.website_title
+            comment: timmarner.websitesetup::lang.keys.website_title_desc
+            tab: Metadata Information
+            span: left
+        website_description:
+            label: timmarner.websitesetup::lang.keys.website_description
+            comment: timmarner.websitesetup::lang.keys.website_description_desc
+            tab: Metadata Information
+            span: right
+        website_keywords:
+            label: timmarner.websitesetup::lang.keys.website_keywords
+            comment: timmarner.websitesetup::lang.keys.website_keywords_desc
+            tab: Metadata Information
+            span: left
+        website_charset:
+            label: timmarner.websitesetup::lang.keys.website_charset
+            comment: timmarner.websitesetup::lang.keys.website_charset_desc
+            tab: Metadata Information
+            span: right
+            default: utf-8
+        website_robots:
+            label: timmarner.websitesetup::lang.keys.website_robots
+            comment: timmarner.websitesetup::lang.keys.website_robots_desc
+            tab: Metadata Information
+            default: noindex,nofollow
+            span: left
+        website_revisit:
+            label: Website Revisit Info
+            comment: Revisit meta tag
+            tab: Metadata Information
+            default: 7 days
+            span: right
+        google_verification_code:
+            label: Google Verification Code
+            comment: https://support.google.com/accounts/answer/6051686?hl=en
+            tab: Metadata Information
+            span: left
+        website_icon:
+            type: fileupload
+            mode: image
+            label: Website Icon (500px x 500px)
+            tab: Metadata Information
+            span: left
+            imageHeight: 144
+            imageWidth: 144
+        website_logo:
+            type: fileupload
+            mode: image
+            span: right
+            label: timmarner.websitesetup::lang.keys.website_logo
+            tab: Metadata Information
+            imageHeight: 144
+            imageWidth: 144
+
+        # Second tab - Contact Information
+
+        contact_data_section:
+            type: section
+            label: timmarner.websitesetup::lang.keys.contact_data_info
+            comment: timmarner.websitesetup::lang.keys.contact_data_info_desc
+            tab: timmarner.websitesetup::lang.keys.contact_data
+        company_name:
+            label: timmarner.websitesetup::lang.keys.company_name
+            tab: timmarner.websitesetup::lang.keys.contact_data
+        company_street:
+            label: timmarner.websitesetup::lang.keys.company_street
+            tab: timmarner.websitesetup::lang.keys.contact_data
+        company_zip:
+            label: timmarner.websitesetup::lang.keys.company_zip
+            tab: timmarner.websitesetup::lang.keys.contact_data
+            span: left
+        company_city:
+            label: timmarner.websitesetup::lang.keys.company_city
+            tab: timmarner.websitesetup::lang.keys.contact_data
+            span: right
+        company_country:
+            label: timmarner.websitesetup::lang.keys.company_country
+            tab: timmarner.websitesetup::lang.keys.contact_data
+        company_number:
+            label: timmarner.websitesetup::lang.keys.company_number
+            tab: timmarner.websitesetup::lang.keys.contact_data
+            span: left
+        company_vat:
+            label: timmarner.websitesetup::lang.keys.company_vat
+            tab: timmarner.websitesetup::lang.keys.contact_data
+            span: right
+        more_emails:
+            span: left
+            label: timmarner.websitesetup::lang.keys.additional_emails
+            tab: timmarner.websitesetup::lang.keys.contact_data
+            type: switch
+        more_phones:
+            span: right
+            label: timmarner.websitesetup::lang.keys.additional_phones
+            tab: timmarner.websitesetup::lang.keys.contact_data
+            type: switch
+        email:
+            span: left
+            label: timmarner.websitesetup::lang.keys.email
+            tab: timmarner.websitesetup::lang.keys.contact_data
+        phone:
+            span: right
+            label: timmarner.websitesetup::lang.keys.phone
+            tab: timmarner.websitesetup::lang.keys.contact_data
+        email2:
+            tab: timmarner.websitesetup::lang.keys.contact_data
+            span: left
+            label: timmarner.websitesetup::lang.keys.email2
+            trigger:
+                action: show
+                field: more_emails
+                condition: checked
+        email3:
+            tab: timmarner.websitesetup::lang.keys.contact_data
+            span: right
+            label: timmarner.websitesetup::lang.keys.email3
+            trigger:
+                action: show
+                field: more_emails
+                condition: checked
+        email4:
+            tab: timmarner.websitesetup::lang.keys.contact_data
+            span: left
+            label: timmarner.websitesetup::lang.keys.email4
+            trigger:
+                action: show
+                field: more_emails
+                condition: checked
+        email5:
+            tab: timmarner.websitesetup::lang.keys.contact_data
+            span: right
+            label: timmarner.websitesetup::lang.keys.email5
+            trigger:
+                action: show
+                field: more_emails
+                condition: checked
+                email2:
+        phone2:
+            tab: timmarner.websitesetup::lang.keys.contact_data
+            span: left
+            label: timmarner.websitesetup::lang.keys.phone3
+            trigger:
+                action: show
+                field: more_phones
+                condition: checked
+        phone3:
+            tab: timmarner.websitesetup::lang.keys.contact_data
+            span: right
+            label: timmarner.websitesetup::lang.keys.phone4
+            trigger:
+                action: show
+                field: more_phones
+                condition: checked
+        phone4:
+            tab: timmarner.websitesetup::lang.keys.contact_data
+            span: left
+            label: timmarner.websitesetup::lang.keys.phone5
+            trigger:
+                action: show
+                field: more_phones
+                condition: checked
+        phone5:
+            tab: timmarner.websitesetup::lang.keys.contact_data
+            span: right
+            label: timmarner.websitesetup::lang.keys.phone6
+            trigger:
+                action: show
+                field: more_phones
+                condition: checked
+        skype:
+            label: timmarner.websitesetup::lang.keys.skype
+            tab: timmarner.websitesetup::lang.keys.contact_data
+
+        # Third Tab - MyMap
+
+        map_settings_section:
+            type: section
+            label: timmarner.websitesetup::lang.keys.map_settings
+            comment: timmarner.websitesetup::lang.keys.map_settings_desc
+            tab: timmarner.websitesetup::lang.keys.my_location
+        location:
+            label: timmarner.websitesetup::lang.keys.current_location
+            disabled: false
+            type: owl-address
+            comment: timmarner.websitesetup::lang.keys.google_maps_query
+            tab: timmarner.websitesetup::lang.keys.my_location
+        google_key:
+            label: timmarner.websitesetup::lang.keys.google_api_key
+            comment: timmarner.websitesetup::lang.keys.google_api_key_desc
+            tab: timmarner.websitesetup::lang.keys.my_location
+        layout_section:
+            type: section
+            label: timmarner.websitesetup::lang.keys.map_layout
+            comment: timmarner.websitesetup::lang.keys.map_layout_desc
+            tab: timmarner.websitesetup::lang.keys.my_location
+        map_width:
+            default: '100%'
+            label: timmarner.websitesetup::lang.keys.map_width
+            span: left
+            tab: timmarner.websitesetup::lang.keys.my_location
+        map_height:
+            default: '300px'
+            label: timmarner.websitesetup::lang.keys.map_height
+            span: right
+            tab: timmarner.websitesetup::lang.keys.my_location
+        map_container_class:
+            default: 'maps-default'
+            label: timmarner.websitesetup::lang.keys.wrapper_css
+            span: left
+            tab: timmarner.websitesetup::lang.keys.my_location
+        map_frameborder:
+            default: '0'
+            label: timmarner.websitesetup::lang.keys.frameborder
+            span: right
+            tab: timmarner.websitesetup::lang.keys.my_location
+        map_style:
+            default: 'border: 0px;'
+            label: timmarner.websitesetup::lang.keys.inline_css
+            tab: timmarner.websitesetup::lang.keys.my_location
+
+        # Fourth Tab - Facebook
+
+        facebook_section:
+            type: section
+            label: timmarner.websitesetup::lang.keys.facebook_info
+            comment: timmarner.websitesetup::lang.keys.facebook_info_desc
+            tab: timmarner.websitesetup::lang.keys.facebook
+        facebook_id:
+            label: timmarner.websitesetup::lang.keys.facebook
+            comment: timmarner.websitesetup::lang.keys.facebook_desc
+            tab: timmarner.websitesetup::lang.keys.facebook
+            span: left
+        facebook_app_id:
+            label: Default og:Facebook App ID
+            comment: https://developers.facebook.com/docs/apps/register
+            tab: timmarner.websitesetup::lang.keys.facebook
+            span: right
+        default_og_title:
+            label: timmarner.websitesetup::lang.keys.default_og_title
+            comment: timmarner.websitesetup::lang.keys.default_og_title_desc
+            tab: timmarner.websitesetup::lang.keys.facebook
+            span: left
+        default_og_description:
+            label: timmarner.websitesetup::lang.keys.default_og_description
+            comment: timmarner.websitesetup::lang.keys.default_og_description_desc
+            tab: timmarner.websitesetup::lang.keys.facebook
+            span: right
+        default_og_type:
+            label: timmarner.websitesetup::lang.keys.default_og_type
+            comment: timmarner.websitesetup::lang.keys.default_og_type_desc
+            default: website
+            tab: timmarner.websitesetup::lang.keys.facebook
+            span: left
+        default_og_video:
+            label: Default og:video
+            comment: Default video to share on facebook (e.g https://www.youtube.com/watch?v=cJefPtNABZg)
+            default: website
+            span: right
+            tab: timmarner.websitesetup::lang.keys.facebook
+        og_image:
+            type: fileupload
+            mode: image
+            span: left
+            label: timmarner.websitesetup::lang.keys.default_og_image
+            comment: timmarner.websitesetup::lang.keys.default_og_image_desc
+            tab: timmarner.websitesetup::lang.keys.facebook
+
+        # Fifth Tab - Twitter
+
+        twitter_section:
+            type: section
+            label: timmarner.websitesetup::lang.keys.twitter_info
+            comment: timmarner.websitesetup::lang.keys.twitter_info_desc
+            tab: timmarner.websitesetup::lang.keys.twitter
+        twitter_id:
+            label: timmarner.websitesetup::lang.keys.twitter
+            comment: timmarner.websitesetup::lang.keys.twitter_desc
+            tab: timmarner.websitesetup::lang.keys.twitter
+        default_twitter_title:
+            label: timmarner.websitesetup::lang.keys.default_twitter_title
+            comment: timmarner.websitesetup::lang.keys.default_twitter_title_desc
+            tab: timmarner.websitesetup::lang.keys.twitter
+        default_twitter_description:
+            label: timmarner.websitesetup::lang.keys.default_twitter_description
+            comment: timmarner.websitesetup::lang.keys.default_twitter_description_desc
+            tab: timmarner.websitesetup::lang.keys.twitter
+        twitter_card:
+            type: dropdown
+            options:
+                summary: summary
+                summary_large_image: summary_large_image
+                app: app
+                player: player
+            label: timmarner.websitesetup::lang.keys.twitter_card
+            comment: timmarner.websitesetup::lang.keys.twitter_card_desc
+            tab: timmarner.websitesetup::lang.keys.twitter
+        twitter_player:
+            span: left
+            tab: timmarner.websitesetup::lang.keys.twitter
+            label: timmarner.websitesetup::lang.keys.twitter_player
+            comment: timmarner.websitesetup::lang.keys.twitter_player_desc
+            trigger:
+                action: show
+                field: twitter_card
+                condition: value[player]
+        twitter_player_stream:
+            span: right
+            tab: timmarner.websitesetup::lang.keys.twitter
+            label: timmarner.websitesetup::lang.keys.twitter_player_stream
+            comment: timmarner.websitesetup::lang.keys.twitter_player_stream_desc
+            trigger:
+                action: show
+                field: twitter_card
+                condition: value[player]
+        twitter_player_width:
+            span: left
+            tab: timmarner.websitesetup::lang.keys.twitter
+            label: timmarner.websitesetup::lang.keys.twitter_player_width
+            comment: timmarner.websitesetup::lang.keys.twitter_player_width_desc
+            trigger:
+                action: show
+                field: twitter_card
+                condition: value[player]
+        twitter_player_height:
+            span: right
+            tab: timmarner.websitesetup::lang.keys.twitter
+            label: timmarner.websitesetup::lang.keys.twitter_player_height
+            comment: timmarner.websitesetup::lang.keys.twitter_player_height_desc
+            trigger:
+                action: show
+                field: twitter_card
+                condition: value[player]
+        twitter_player_stream_content_type:
+            span: left
+            tab: timmarner.websitesetup::lang.keys.twitter
+            label: timmarner.websitesetup::lang.keys.twitter_player_stream_content_type
+            comment: timmarner.websitesetup::lang.keys.twitter_player_stream_content_type_desc
+            trigger:
+                action: show
+                field: twitter_card
+                condition: value[player]
+        twitter_image:
+            type: fileupload
+            mode: image
+            span: left
+            label: timmarner.websitesetup::lang.keys.default_twitter_image
+            comment: timmarner.websitesetup::lang.keys.default_twitter_image_desc
+            tab: timmarner.websitesetup::lang.keys.twitter
+
+        # Sixth Tab - Windows Tiles
+
+        microsoft_section:
+            type: section
+            label: timmarner.websitesetup::lang.keys.microsoft_info
+            comment: timmarner.websitesetup::lang.keys.microsoft_info_desc
+            tab: Windows Tiles
+        default_tile_title:
+            label: timmarner.websitesetup::lang.keys.default_tile_title
+            comment: timmarner.websitesetup::lang.keys.default_tile_title_comment
+            tab: Windows Tiles
+        default_tile_background:
+            label: timmarner.websitesetup::lang.keys.default_tile_background
+            tab: Windows Tiles
+        windows_image:
+            type: fileupload
+            mode: image
+            label: Windows Tile Image (500px x 500px)
+            tab: Windows Tiles
+            imageHeight: 144
+            imageWidth: 144
+
+        # Seventh Tab - Other Social Media
+
+        socialmedia_section:
+            type: section
+            label: timmarner.websitesetup::lang.keys.other_social_media_info
+            comment: timmarner.websitesetup::lang.keys.other_social_media_info_desc
+            tab: timmarner.websitesetup::lang.keys.other_social_media
+        googleplus_id:
+            span: left
+            label: timmarner.websitesetup::lang.keys.google_plus
+            comment: timmarner.websitesetup::lang.keys.google_plus_desc
+            tab: timmarner.websitesetup::lang.keys.other_social_media
+        googleplus_alias:
+            span: right
+            label: timmarner.websitesetup::lang.keys.google_plus_alias
+            comment: timmarner.websitesetup::lang.keys.google_plus_alias_desc
+            tab: timmarner.websitesetup::lang.keys.other_social_media
+        instagram_id:
+            label: Instagram
+            comment: https://www.instagram.com/*ONLY_THIS*
+            tab: timmarner.websitesetup::lang.keys.other_social_media   
+        youtube_id:
+            label: timmarner.websitesetup::lang.keys.youtube
+            comment: timmarner.websitesetup::lang.keys.youtube_desc
+            tab: timmarner.websitesetup::lang.keys.other_social_media
+        linkedin_id:
+            label: timmarner.websitesetup::lang.keys.linkedin
+            comment: timmarner.websitesetup::lang.keys.linkedin_desc
+            tab: timmarner.websitesetup::lang.keys.other_social_media
+        pinterest_id:
+            label: Pinterest
+            comment: pinterest.com/*ONLY_THIS*
+            tab: timmarner.websitesetup::lang.keys.other_social_media
+            span: left
+        pinterest_domain_verify:
+            label: Pinterest Verification Code
+            comment: Click your name at the top of Pinterest. Gear menu->Account settings->Website field.
+            tab: timmarner.websitesetup::lang.keys.other_social_media
+            span: right
+        reddit_id:
+            label: timmarner.websitesetup::lang.keys.reddit
+            comment: timmarner.websitesetup::lang.keys.reddit_desc
+            tab: timmarner.websitesetup::lang.keys.other_social_media
+        dribble_id:
+            label: timmarner.websitesetup::lang.keys.dribble
+            comment: timmarner.websitesetup::lang.keys.dribble_desc
+            tab: timmarner.websitesetup::lang.keys.other_social_media
+        tumblr_id:
+            span: left
+            label: timmarner.websitesetup::lang.keys.tumblr
+            comment: timmarner.websitesetup::lang.keys.tumblr_desc
+            tab: timmarner.websitesetup::lang.keys.other_social_media
+        tumblr_alias:
+            span: right
+            label: timmarner.websitesetup::lang.keys.tumblr_alias
+            comment: timmarner.websitesetup::lang.keys.tubmlr_alias_desc
+            tab: timmarner.websitesetup::lang.keys.other_social_media
+
+        # Other
+
+        

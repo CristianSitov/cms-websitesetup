@@ -1,0 +1,10 @@
+{% if google_key == 'not_set' %}
+<br/>
+<h4 class="text-center">Google Maps API is not set.</h4>   <br/>
+{% else %}
+<div class="{{ map_container_class }}">
+    <iframe src="https://www.google.com/maps/embed/v1/search?key={{ google_key }}&q={{ current_location }}"
+            width="{{ map_width }}" height="{{ map_height }}" frameborder="{{ map_frameborder}}"
+            style="{{ map_style }}"></iframe>
+</div>
+{% endif %}

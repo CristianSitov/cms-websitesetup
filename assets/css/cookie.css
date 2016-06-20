@@ -1,0 +1,13 @@
+#cookieBanner {
+	display: none;
+	font-size: 14px;
+	width: 100%;
+	padding: 12px;
+	text-align: center;
+	background-color: #FDFDFD;
+	margin: 0 auto -2px;
+	}
+#cookieBannerActions {
+	text-align: center;
+	padding-top: 4px;
+}
