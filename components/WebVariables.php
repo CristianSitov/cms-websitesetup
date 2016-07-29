@@ -232,6 +232,17 @@ class WebVariables extends ComponentBase
         if ($settings->google_verification_code) {
             $this->page[ 'google_verification_code' ] = $settings->google_verification_code;
         }
+
+        // Maintence Page Settings
+        if ($settings->maintenance_bg) {
+            $this->page[ 'maintenance_bg' ] = $settings->maintenance_bg;
+        }
+        if ($settings->maintenance_message) {
+            $this->page[ 'maintenance_message' ] = $settings->maintenance_message;
+        }
+        if ($settings->maintenance_logo) {
+            $this->page[ 'maintenance_logo' ] = $settings->maintenance_logo;
+        }
         
 
         $url = $this->page->url;

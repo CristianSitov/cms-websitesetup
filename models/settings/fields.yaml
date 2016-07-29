@@ -60,10 +60,35 @@ tabs:
             type: fileupload
             mode: image
             span: right
-            label: timmarner.websitesetup::lang.keys.website_logo
+            label: Website Logo
             tab: Metadata Information
             imageHeight: 144
-            imageWidth: 144
+
+        # Maintenance Page Settings
+        
+        maintenance_bg:
+            type: fileupload
+            mode: image
+            comment: Background image that shows on the maintenance page.
+            span: right
+            label: Background Image 
+            tab: Maintenance Page
+        maintenance_message:
+            label: Message
+            comment: Text that shows on the maintenance page.
+            default: Currently down for maintenance. Call back soon!
+            tab: Maintenance Page
+            span: left
+        maintenance_logo:
+            type: fileupload
+            mode: image
+            span: left
+            label: Logo
+            comment: Logo that shows on the maintenance page.
+            tab: Maintenance Page
+            imageHeight: 144
+
+        
 
         # Second tab - Contact Information
 

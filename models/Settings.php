@@ -93,7 +93,11 @@ class Settings extends Model
             'map_style',
             'map_frameborder',
             'default_tile_background',
-            'windows_image'
+            'windows_image',
+
+            'maintenance_logo',
+            'maintenance_message',
+            'maintenance_bg'
         ];
 
     /**
@@ -110,6 +114,8 @@ class Settings extends Model
         'twitter_image'            => ['System\Models\File'],
         'og_image'                 => ['System\Models\File'],
         'windows_image'            => ['System\Models\File'],
+        'maintenance_logo'         => ['System\Models\File'],
+        'maintenance_bg'           => ['System\Models\File'],
     ];
     /**
      * @var string The database table used by the model.
