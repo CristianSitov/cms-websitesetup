@@ -2,9 +2,9 @@
 #  Form Field Definitions
 # ===================================
 tabs:
-    fields:
+    fields:   
 
-        # First Tab - Meta Information
+    # First Tab - Meta Information
         website_section:
             type: section
             label: Metadata Information
@@ -64,33 +64,64 @@ tabs:
             tab: Metadata Information
             imageHeight: 144
 
-        # Maintenance Page Settings
-        
-        maintenance_bg:
-            type: fileupload
-            mode: image
-            comment: Background image that shows on the maintenance page.
-            span: right
-            label: Background Image 
-            tab: Maintenance Page
+    # Maintenance Page Settings
         maintenance_message:
             label: Message
             comment: Text that shows on the maintenance page.
             default: Currently down for maintenance. Call back soon!
             tab: Maintenance Page
             span: left
+        maintenance_logo_position:
+            type: dropdown
+            options:
+                abs-c: Center
+                abs-t: Top
+                abs-t-l: Top left
+                abs-t-r: Top Right
+                abs-b: Bottom
+                abs-b-l: Bottom Left
+                abs-r: Bottom Right
+            span: right
+            label: Logo
+            comment: Logo position on the maintenance page.
+            tab: Maintenance Page
+            default: abs-c
+        maintenance_social_color:
+            span: left
+            type: colorpicker
+            label: Social Icon Color
+            tab: Maintenance Page    
+        maintenance_social_background:
+            span: right
+            type: colorpicker
+            label: Social Background Color
+            tab: Maintenance Page  
+        maintenance_padding:
+            span: left
+            type: text
+            label: Padding
+            tab: Maintenance Page
+            default: 5%
+        maintenance_logowidth:
+            span: right
+            type: text
+            label: Logo Width
+            tab: Maintenance Page
         maintenance_logo:
             type: fileupload
             mode: image
-            span: left
             label: Logo
             comment: Logo that shows on the maintenance page.
             tab: Maintenance Page
             imageHeight: 144
+        maintenance_bg:
+            type: fileupload
+            mode: image
+            comment: Background image that shows on the maintenance page.
+            label: Background Image 
+            tab: Maintenance Page
 
-        
-
-        # Second tab - Contact Information
+    # Second tab - Contact Information
 
         contact_data_section:
             type: section
@@ -256,7 +287,7 @@ tabs:
             label: timmarner.websitesetup::lang.keys.inline_css
             tab: timmarner.websitesetup::lang.keys.my_location
 
-        # Fourth Tab - Facebook
+    # Fourth Tab - Facebook
 
         facebook_section:
             type: section
@@ -303,7 +334,7 @@ tabs:
             comment: timmarner.websitesetup::lang.keys.default_og_image_desc
             tab: timmarner.websitesetup::lang.keys.facebook
 
-        # Fifth Tab - Twitter
+    # Fifth Tab - Twitter
 
         twitter_section:
             type: section
@@ -385,7 +416,7 @@ tabs:
             comment: timmarner.websitesetup::lang.keys.default_twitter_image_desc
             tab: timmarner.websitesetup::lang.keys.twitter
 
-        # Sixth Tab - Windows Tiles
+    # Sixth Tab - Windows Tiles
 
         microsoft_section:
             type: section
@@ -407,7 +438,7 @@ tabs:
             imageHeight: 144
             imageWidth: 144
 
-        # Seventh Tab - Other Social Media
+    # Seventh Tab - Other Social Media
 
         socialmedia_section:
             type: section
@@ -433,9 +464,19 @@ tabs:
             comment: timmarner.websitesetup::lang.keys.youtube_desc
             tab: timmarner.websitesetup::lang.keys.other_social_media
         linkedin_id:
+            span: left
             label: timmarner.websitesetup::lang.keys.linkedin
             comment: timmarner.websitesetup::lang.keys.linkedin_desc
             tab: timmarner.websitesetup::lang.keys.other_social_media
+        linkedin_account:
+            span: right
+            label: timmarner.websitesetup::lang.keys.linkedin_account
+            comment: timmarner.websitesetup::lang.keys.linkedin_account_desc
+            tab: timmarner.websitesetup::lang.keys.other_social_media
+            type: dropdown
+            options:
+                personal: Personal
+                company: Company
         pinterest_id:
             label: Pinterest
             comment: pinterest.com/*ONLY_THIS*

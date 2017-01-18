@@ -98,6 +98,8 @@ return [
         'youtube_desc'                            => 'youtube.com/user/*ONLY_THIS*',
         'linkedin'                                => 'LinkedIn ',
         'linkedin_desc'                           => 'linkedin.com/in/*ONLY_THIS*',
+        'linkedin_account'                        => 'LinkedIn Account',
+        'linkedin_account_desc'                   => 'Type of account it is',
         'reddit'                                  => 'Reddit ',
         'reddit_desc'                             => 'reddit.com/user/*ONLY_THIS*',
         'dribble'                                 => 'Dribble ',

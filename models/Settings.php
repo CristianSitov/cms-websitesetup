@@ -32,6 +32,7 @@ class Settings extends Model
             'facebook_app_id',
             'twitter_id',
             'linkedin_id',
+            'linkedin_account',
             'googleplus_id',
             'googleplus_alias',
             'google_verification_code',
@@ -94,10 +95,14 @@ class Settings extends Model
             'map_frameborder',
             'default_tile_background',
             'windows_image',
-
             'maintenance_logo',
             'maintenance_message',
-            'maintenance_bg'
+            'maintenance_bg',
+            'maintenance_logo_position',
+            'maintenance_social_color',
+            'maintenance_social_background',
+            'maintenance_padding',
+            'maintenance_logowidth'
         ];
 
     /**

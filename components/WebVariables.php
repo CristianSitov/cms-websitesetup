@@ -84,7 +84,12 @@ class WebVariables extends ComponentBase
         }
         if ($settings->linkedin_id) {
             $this->page[ 'linkedin_id' ] = $settings->linkedin_id;
-            $this->page[ 'link_linkedin' ] = 'http://linkedin.com/in/'.$settings->linkedin_id;
+        }
+        if ($settings->linkedin_account == 'company') {
+            $this->page[ 'link_linkedin' ] = 'https://www.linkedin.com/in/'.$settings->linkedin_id;
+            if($settings->linkedin_account){
+                $this->page[ 'link_linkedin' ] = 'https://www.linkedin.com/company/'.$settings->linkedin_id;
+            }
         }
         if ($settings->email) {
             $this->page[ 'email' ] = $settings->email;
@@ -242,8 +247,22 @@ class WebVariables extends ComponentBase
         }
         if ($settings->maintenance_logo) {
             $this->page[ 'maintenance_logo' ] = $settings->maintenance_logo;
+        }       
+        if ($settings->maintenance_logo_position) {
+            $this->page[ 'maintenance_logo_position' ] = $settings->maintenance_logo_position;
+        }    
+        if ($settings->maintenance_social_color) {
+            $this->page[ 'maintenance_social_color' ] = $settings->maintenance_social_color;
         }
-        
+        if ($settings->maintenance_social_background) {
+            $this->page[ 'maintenance_social_background' ] = $settings->maintenance_social_background;
+        }  
+        if ($settings->maintenance_padding) {
+            $this->page[ 'maintenance_padding' ] = $settings->maintenance_padding;
+        }           
+        if ($settings->maintenance_logowidth) {
+            $this->page[ 'maintenance_logowidth' ] = $settings->maintenance_logowidth;
+        }     
 
         $url = $this->page->url;
         $params = $this->controller->vars[ 'this' ][ 'param' ];
