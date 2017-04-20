@@ -37,6 +37,7 @@ class Settings extends Model
             'googleplus_alias',
             'google_verification_code',
             'youtube_id',
+            'youtube_channel',
             'email',
             'more_emails',
             'more_phones',

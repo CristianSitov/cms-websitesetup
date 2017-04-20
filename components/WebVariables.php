@@ -58,7 +58,7 @@ class WebVariables extends ComponentBase
         if ($settings->pinterest_id) {
             $this->page[ 'pinterest_id' ] = $settings->pinterest_id;
             $this->page[ 'link_pinterest' ] = 'https://pinterest.com/'.$settings->pinterest_id;
-        } 
+        }
         if ($settings->pinterest_domain_verify) {
             $this->page[ 'pinterest_domain_verify' ] = $settings->pinterest_domain_verify;
         }
@@ -114,6 +114,10 @@ class WebVariables extends ComponentBase
         if ($settings->youtube_id) {
             $this->page[ 'youtube_id' ] = $settings->youtube_id;
             $this->page[ 'link_youtube' ] = 'https://youtube.com/user/'.$settings->youtube_id;
+        }
+        if ($settings->youtube_channel) {
+            $this->page[ 'youtube_channel' ] = $settings->youtube_channel;
+            $this->page[ 'link_youtube_channel' ] = 'https://youtube.com/channel/'.$settings->youtube_channel;
         }
         if ($settings->dribble_id) {
             $this->page[ 'dribble_id' ] = $settings->dribble_id;
@@ -247,22 +251,22 @@ class WebVariables extends ComponentBase
         }
         if ($settings->maintenance_logo) {
             $this->page[ 'maintenance_logo' ] = $settings->maintenance_logo;
-        }       
+        }
         if ($settings->maintenance_logo_position) {
             $this->page[ 'maintenance_logo_position' ] = $settings->maintenance_logo_position;
-        }    
+        }
         if ($settings->maintenance_social_color) {
             $this->page[ 'maintenance_social_color' ] = $settings->maintenance_social_color;
         }
         if ($settings->maintenance_social_background) {
             $this->page[ 'maintenance_social_background' ] = $settings->maintenance_social_background;
-        }  
+        }
         if ($settings->maintenance_padding) {
             $this->page[ 'maintenance_padding' ] = $settings->maintenance_padding;
-        }           
+        }
         if ($settings->maintenance_logowidth) {
             $this->page[ 'maintenance_logowidth' ] = $settings->maintenance_logowidth;
-        }     
+        }
 
         $url = $this->page->url;
         $params = $this->controller->vars[ 'this' ][ 'param' ];

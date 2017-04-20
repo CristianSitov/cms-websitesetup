@@ -2,7 +2,7 @@
 #  Form Field Definitions
 # ===================================
 tabs:
-    fields:   
+    fields:
 
     # First Tab - Meta Information
         website_section:
@@ -90,12 +90,12 @@ tabs:
             span: left
             type: colorpicker
             label: Social Icon Color
-            tab: Maintenance Page    
+            tab: Maintenance Page
         maintenance_social_background:
             span: right
             type: colorpicker
             label: Social Background Color
-            tab: Maintenance Page  
+            tab: Maintenance Page
         maintenance_padding:
             span: left
             type: text
@@ -118,7 +118,7 @@ tabs:
             type: fileupload
             mode: image
             comment: Background image that shows on the maintenance page.
-            label: Background Image 
+            label: Background Image
             tab: Maintenance Page
 
     # Second tab - Contact Information
@@ -458,11 +458,17 @@ tabs:
         instagram_id:
             label: Instagram
             comment: https://www.instagram.com/*ONLY_THIS*
-            tab: timmarner.websitesetup::lang.keys.other_social_media   
+            tab: timmarner.websitesetup::lang.keys.other_social_media
         youtube_id:
             label: timmarner.websitesetup::lang.keys.youtube
             comment: timmarner.websitesetup::lang.keys.youtube_desc
             tab: timmarner.websitesetup::lang.keys.other_social_media
+            span: left
+        youtube_channel:
+            label: timmarner.websitesetup::lang.keys.youtube_channel
+            comment: timmarner.websitesetup::lang.keys.youtube_channel_desc
+            tab: timmarner.websitesetup::lang.keys.other_social_media
+            span: right
         linkedin_id:
             span: left
             label: timmarner.websitesetup::lang.keys.linkedin
@@ -508,4 +514,3 @@ tabs:
 
         # Other
 
-        

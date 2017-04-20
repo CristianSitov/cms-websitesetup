@@ -103,6 +103,7 @@ linkedin
 googleplus
 googleplus_alias
 youtube
+youtube_channel
 email
 email2
 email3
@@ -134,6 +135,7 @@ link_email3
 link_email4
 link_email5
 link_youtube
+link_youtube_channel
 link_dribble
 link_reddit
 link_googleplus
