@@ -1,63 +1,66 @@
-<!-- Tim Marner -->
-<meta http-equiv="Content-Type" content="text/html; charset={{ website_charset }}" />
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
-<meta name="apple-mobile-web-app-capable" content="yes" />
-<meta name="apple-mobile-web-app-title" content="mightySlider" />
-<title>{{ this.page.title|title }} | {{ website_title }}</title>
-<meta itemprop="name" content="{{ this.page.title }} | {{ website_title }}{{ this.page.meta_title }}">
-<meta name="description" content="{{ website_description }}"/>
-<meta itemprop="description" content="{{ website_description }}">
-<meta name="keywords" content="{{ website_keywords }}"/>
-<meta name="author" content="Tim Marner - Web Design Manchester"/>
-<meta name="robots" content="{{ website_robots }}">
-<meta name="revisit-after" content="{{ website_revisit }}">
-<link rel="canonical" href="{{ ''|page }}" />
-{% if website_icon.path %}
-<link rel="apple-touch-icon" sizes="57x57" href="{{ website_icon.thumb(57,57) }}">
-<link rel="apple-touch-icon" sizes="60x60" href="{{ website_icon.thumb(60,60) }}">
-<link rel="apple-touch-icon" sizes="72x72" href="{{ website_icon.thumb(72,72) }}">
-<link rel="apple-touch-icon" sizes="76x76" href="{{ website_icon.thumb(76,76) }}">
-<link rel="apple-touch-icon" sizes="114x114" href="{{ website_icon.thumb(114,114) }}">
-<link rel="apple-touch-icon" sizes="120x120" href="{{ website_icon.thumb(120,120) }}">
-<link rel="apple-touch-icon" sizes="144x144" href="{{ website_icon.thumb(144,144) }}">
-<link rel="apple-touch-icon" sizes="152x152" href="{{ website_icon.thumb(152,152) }}">
-<link rel="apple-touch-icon" sizes="180x180" href="{{ website_icon.thumb(180,180) }}">
-<link rel="icon" type="image/png" sizes="192x192"  href="{{ website_icon.thumb(192,192) }}">
-<link rel="icon" type="image/png" sizes="32x32" href="{{ website_icon.thumb(32,32) }}">
-<link rel="icon" type="image/png" sizes="96x96" href="{{ website_icon.thumb(96,96) }}">
-<link rel="icon" type="image/png" sizes="16x16" href="{{ website_icon.thumb(16,16) }}">
-{% endif %}
-<meta property="og:title" content="{{ this.page.title }} | {{ default_og_title }}">
-<meta property="og:description" content="{{ default_og_description }}">
-<meta property="og:url" content="{{ ''|page }}" />
-<meta property="og:type" content="{{ default_og_type }}">
-<meta property="og:site_name" content="{{ website_title }}">
-<meta property="og:updated_time" content="{{ "now"|date('Y-m-d') }}T09:00:00" />
-<meta property="og:locale" content="en_GB" />
-{% if og_image.path %}
-<meta property="og:image" content="{{ og_image.path }}">
-<meta itemprop="image" content="{{ og_image.path }}">
-{% endif %}
-{% if default_og_video %}
-<meta property="og:video" content="{{ default_og_video }}" />
-{% endif %}
-<meta name="twitter:title" content="{{ this.page.title }} | {{ default_twitter_title }}">
-<meta name="twitter:description" content="{{ default_twitter_description }}">
-<meta name="twitter:card" content="{{ twitter_card }}">
-<meta name="twitter:site" content="@{{ twitter_id }}">
-<meta name="twitter:creator" content="@{{ twitter_id }}">
-{% if twitter_image.path %}
-<meta name="twitter:image" content="{{ twitter_image.path }}">
-{% endif %}
-<meta name="application-name" content="{{ default_tile_title }}"/>
-<meta name="msapplication-TileColor" content="{{ default_tile_background }}"/>
-{% if windows_image.path %}
-<meta name="msapplication-square70x70logo" content="{{ windows_image.thumb(70,70) }}"/>
-<meta name="msapplication-square150x150logo" content="{{ windows_image.thumb(150,150) }}"/>
-<meta name="msapplication-wide310x150logo" content="{{ windows_image.thumb(310,150) }}"/>
-<meta name="msapplication-square310x310logo" content="{{ windows_image.thumb(310,310) }}"/>
-{% endif %}
-<meta name="p:domain_verify" content="{{ pinterest_domain_verify }}"/>
-<meta property="fb:app_id" content="{{ facebook_app_id }}" />
-<meta name="google-site-verification" content="{{ google_verification_code }}" />
+
+	<!-- website config -->
+	<meta http-equiv="Content-Type" content="text/html; charset={{ website_charset }}" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+	<meta name="apple-mobile-web-app-capable" content="yes" />
+	<meta name="apple-mobile-web-app-title" content="{{ website_title }}" />
+	<title>{{ this.page.title|title }} | {{ website_title }}</title>
+	<meta itemprop="name" content="{{ this.page.title }} | {{ website_title }}{{ this.page.meta_title }}">
+	<meta name="description" content="{{ website_description }}"/>
+	<meta itemprop="description" content="{{ website_description }}">
+	<meta name="keywords" content="{{ website_keywords }}"/>
+	<meta name="author" content="{{ website_title }}"/>
+	<meta name="robots" content="{{ website_robots }}">
+	<meta name="revisit-after" content="{{ website_revisit }}">
+	<link rel="canonical" href="{{ ''|page }}" />
+	{% if website_icon.path %}
+	<link rel="apple-touch-icon" sizes="57x57" href="{{ website_icon.thumb(57,57) }}">
+	<link rel="apple-touch-icon" sizes="60x60" href="{{ website_icon.thumb(60,60) }}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{{ website_icon.thumb(72,72) }}">
+	<link rel="apple-touch-icon" sizes="76x76" href="{{ website_icon.thumb(76,76) }}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{{ website_icon.thumb(114,114) }}">
+	<link rel="apple-touch-icon" sizes="120x120" href="{{ website_icon.thumb(120,120) }}">
+	<link rel="apple-touch-icon" sizes="144x144" href="{{ website_icon.thumb(144,144) }}">
+	<link rel="apple-touch-icon" sizes="152x152" href="{{ website_icon.thumb(152,152) }}">
+	<link rel="apple-touch-icon" sizes="180x180" href="{{ website_icon.thumb(180,180) }}">
+	<link rel="icon" type="image/png" sizes="192x192"  href="{{ website_icon.thumb(192,192) }}">
+	<link rel="icon" type="image/png" sizes="32x32" href="{{ website_icon.thumb(32,32) }}">
+	<link rel="icon" type="image/png" sizes="96x96" href="{{ website_icon.thumb(96,96) }}">
+	<link rel="icon" type="image/png" sizes="16x16" href="{{ website_icon.thumb(16,16) }}">
+	{% endif %}
+	<meta property="og:title" content="{{ this.page.title }} | {{ default_og_title }}">
+	<meta property="og:description" content="{{ default_og_description }}">
+	<meta property="og:url" content="{{ ''|page }}" />
+	<meta property="og:type" content="{{ default_og_type }}">
+	<meta property="og:site_name" content="{{ website_title }}">
+	<meta property="og:updated_time" content="{{ "now"|date('Y-m-d') }}T09:00:00" />
+	<meta property="og:locale" content="en_GB" />
+	{% if og_image.path %}
+	<meta property="og:image" content="{{ og_image.path }}">
+	<meta itemprop="image" content="{{ og_image.path }}">
+	{% endif %}
+	{% if default_og_video %}
+	<meta property="og:video" content="{{ default_og_video }}" />
+	{% endif %}
+	<meta name="twitter:title" content="{{ this.page.title }} | {{ default_twitter_title }}">
+	<meta name="twitter:description" content="{{ default_twitter_description }}">
+	<meta name="twitter:card" content="{{ twitter_card }}">
+	<meta name="twitter:site" content="@{{ twitter_id }}">
+	<meta name="twitter:creator" content="@{{ twitter_id }}">
+	{% if twitter_image.path %}
+	<meta name="twitter:image" content="{{ twitter_image.path }}">
+	{% endif %}
+	<meta name="application-name" content="{{ default_tile_title }}"/>
+	<meta name="msapplication-TileColor" content="{{ default_tile_background }}"/>
+	{% if windows_image.path %}
+	<meta name="msapplication-square70x70logo" content="{{ windows_image.thumb(70,70) }}"/>
+	<meta name="msapplication-square150x150logo" content="{{ windows_image.thumb(150,150) }}"/>
+	<meta name="msapplication-wide310x150logo" content="{{ windows_image.thumb(310,150) }}"/>
+	<meta name="msapplication-square310x310logo" content="{{ windows_image.thumb(310,310) }}"/>
+	{% endif %}
+	<meta name="p:domain_verify" content="{{ pinterest_domain_verify }}"/>
+	<meta property="fb:app_id" content="{{ facebook_app_id }}" />
+	<meta name="google-site-verification" content="{{ google_verification_code }}" />
+	<!-- /website config -->
+
